@@ -102,12 +102,13 @@
     const backgroundDiv = document.getElementById('background');
 
     function changeBackground() {
+      backgroundDiv.style.transition = "opacity 2s ease-in-out;
       backgroundDiv.style.opacity = 0;
       setTimeout(() => {
         backgroundDiv.style.backgroundImage = `url('${backgrounds[current]}')`;
         backgroundDiv.style.opacity = 1;
         current = (current + 1) % backgrounds.length;
-      }, 2000); // wait for fade out before changing
+      }, 3000); // wait for fade out before changing
     }
 
     // First background
