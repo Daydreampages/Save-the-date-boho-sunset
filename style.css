@@ -132,3 +132,11 @@ p {
   padding: 30px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+.photo {
+  width: 100%;
+  max-width: 400px; /* or 500px, depending on how big you want it */
+  height: auto;
+  border-radius: 20px; /* optional: soft rounded corners */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* optional: soft shadow */
+  margin: 20px 0;
+}
