@@ -151,3 +151,7 @@ h1, h2, h3, {
 p{
   text-shadow:1px 1px 3px rgba(239, 216, 197, 0.7);
 }
+
+#background {
+  transition: opacity 3s ease-in-out;
+}
