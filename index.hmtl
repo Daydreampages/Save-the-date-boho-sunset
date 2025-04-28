@@ -96,7 +96,7 @@
   'assets/background-2.jpg',
   'assets/background-3.jpg',
   'assets/background-4.jpg',
-  'assets/background-5.jpg',
+  'assets/background-5.jpg'
 ];
     let current = 0;
     const backgroundDiv = document.getElementById('background');
