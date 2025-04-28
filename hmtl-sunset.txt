@@ -65,9 +65,6 @@
     <a href="assets/photo3.jpg" data-lightbox="wedding-gallery" data-title="Memory 3">
       <img src="assets/photo3.jpg" alt="Memory 3">
     </a>
-    <a href="assets/photo4.jpg" data-lightbox="wedding-gallery" data-title="Memory 4">
-      <img src="assets/photo4.jpg" alt="Memory 4">
-    </a>
   </div>
 </div>
 
