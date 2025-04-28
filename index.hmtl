@@ -89,9 +89,9 @@
 <script>
   window.addEventListener('load', function() {
    const backgrounds = [
-  'assets/floral-background-1.jpg',
-  'assets/floral-background-2.jpg',
-  'assets/floral-background-3.jpg',
+  'assets/extra-background-1.jpg',
+  'assets/extra-background-2.jpg',
+  'assets/extra-background-3.jpg',
   'assets/background-1.jpg',
   'assets/background-2.jpg',
   'assets/background-3.jpg',
