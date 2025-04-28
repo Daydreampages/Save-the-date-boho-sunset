@@ -26,6 +26,7 @@
 body {
   font-family: 'Playfair Display', 'Poppins', serif;
   background: url('assets/background.jpg') repeat;
+  background-color: #E9B7A3;
   background-size: cover;
   background-attachment: fixed;
   color: #EFD8C5;
@@ -37,7 +38,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: backgroundMove 15s linear infinite;
+  animation: backgroundMove 60s linear infinite;
 }
 .rsvp-button {
     display: inline-block;
