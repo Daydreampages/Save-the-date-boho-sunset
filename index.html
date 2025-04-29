@@ -108,10 +108,12 @@
         //its a color
         backgroundDiv.style.backgroundImage ='none';
         backgroundDiv.style.backgroundColor = bg;
+        backgroundDiv.style.animation = "pulse 5s ease-in-out infinite"; //<----add pulse
         } else { 
           //its an image
           backgroundDiv.style.backgroundImage = `url('${bg}')`;
           backgroundDiv.style.backgroundColor = 'transparent';
+          backgroundDiv.style.animation = "none"; //<---turn off pulse
         }
         backgroundDiv.style.opacity = 1;
         current = (current + 1) % backgrounds.length;
