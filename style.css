@@ -15,7 +15,7 @@
   background-attachment: fixed;
   z-index: -1;
   opacity: 1;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 3s ease-in-out;
 }
 
 #background {
@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #FFF9F3; /* Safe default color */
-  transition: opacity 2s ease-in-out;
+  transition: opacity 3s ease-in-out;
 }
 
 /* Main Content Above Background */
