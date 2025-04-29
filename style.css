@@ -1,8 +1,6 @@
-/*Daydream Pages*/
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
 
-/* Fullscreen Background Div */
+/* Fullscreen Background */
 #background {
   position: fixed;
   top: 0;
@@ -13,15 +11,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: #FFF9F3; /* Safe default color */
   z-index: -1;
   opacity: 1;
   transition: opacity 3s ease-in-out;
+}
 
 /* Main Content Above Background */
 #content {
   position: relative;
   z-index: 1;
 }
+
+/* General Body Styles */
 body {
   font-family: 'Playfair Display', 'Poppins', serif;
   background: url('assets/background.jpg') repeat;
@@ -38,40 +40,52 @@ body {
   align-items: center;
   animation: backgroundMove 60s linear infinite;
 }
+
+/* RSVP Button */
 .rsvp-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: #EFD8C5;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #EFD8C5;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .rsvp-button:hover {
-    background-color: #E2725B;
+  background-color: #E2725B;
 }
 
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 1px 1px 4px rgba(239, 216, 197, 0.8);
+}
 
 h1 {
-  font-family: 'Great Vibes', cursive;
   font-size: 4rem;
   margin-bottom: 0.5em;
   color: #E2725B;
-  text-shadow: 2px 2px 5px rgba(212, 165, 165, 0.5);
 }
 
+h2, h3 {
+  font-size: 2.5rem;
+  color: #E2725B;
+}
+
+/* Paragraphs */
 p {
   font-size: 1.8rem;
   margin-top: 0;
   color: #D76A03;
-  text-shadow:1px 1px 3px rgba(239, 216, 197, 0.7);
+  text-shadow: 1px 1px 3px rgba(239, 216, 197, 0.7);
 }
 
+/* Mobile Adjustments */
 @media (max-width: 300px) {
   h1 {
     font-size: 2.5rem;
@@ -80,32 +94,25 @@ p {
     font-size: 1.3rem;
   }
 }
+
+/* Moving Background Animation */
 @keyframes backgroundMove {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 1000px 1000px;
-  }
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
 }
-/* Fade-in animation */
+
+/* Fade-In Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 2s ease-out forwards;
 }
 
-/* Keyframes for fade-in */
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
+
 /* Gallery Styles */
 .gallery {
   display: grid;
@@ -116,26 +123,29 @@ p {
 
 .gallery img {
   width: 100%;
-  max-width:300px;
-  object-fit:cover;
+  max-width: 300px;
+  object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin:10px;
+  margin: 10px;
   transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1); /* Softer zoom instead of 2.05 */
 }
 
+/* Main Photo (Couple Photo) */
 .photo {
   width: 100%;
-  max-width: 400px; /* or 500px, depending on how big you want it */
+  max-width: 400px;
   height: auto;
-  border-radius: 20px; /* optional: soft rounded corners */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* optional: soft shadow */
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   margin: 20px 0;
 }
+
+/* Main Container Style */
 .container {
   background-color: rgba(255, 255, 255, 0.6); /* 60% transparent */
   border-radius: 12px;
@@ -143,18 +153,9 @@ p {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-h1, h2, h3 {
-  text-shadow: 1px 1px 4px rgba(239, 216, 197, 0.8);
-}
-
+/* Pulse Animation for Canvas Backgrounds */
 @keyframes pulse {
-  0% {
-    filter: brightness(100%);
-  }
-  50% {
-    filter: brightness(105%);
-  }
-  100% {
-    filter: brightness(100%);
-  }
+  0% { filter: brightness(100%); }
+  50% { filter: brightness(105%); }
+  100% { filter: brightness(100%); }
 }
