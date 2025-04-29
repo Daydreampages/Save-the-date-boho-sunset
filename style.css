@@ -9,13 +9,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('asset/extra-background-1jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
   opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+#background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #FFF9F3; /* Safe default color */
   transition: opacity 2s ease-in-out;
 }
 
