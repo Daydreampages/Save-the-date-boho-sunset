@@ -164,3 +164,14 @@ p{
 #background {
   transition: opacity 3s ease-in-out;
 }
+@keyframes pulse {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(105%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
