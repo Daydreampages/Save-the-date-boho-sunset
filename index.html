@@ -103,7 +103,16 @@
       backgroundDiv.style.transition = "opacity 2s ease-in-out;
       backgroundDiv.style.opacity = 0;
       setTimeout(() => {
-        backgroundDiv.style.backgroundImage = `url('${backgrounds[current]}')`;
+        const bg = backgrounds[current];
+        if (bg.startsWith('#')){
+        //its a color
+        backgroundDiv.style.backgroundImage ='none';
+        backgroundDiv.style.backgroundColor = bg;
+        } else { 
+          //its an image
+          backgroundDiv.style.backgroundImage = `url('${bg}')`;
+          backgroundDiv.style.backgroundColor = 'transparent';
+        }
         backgroundDiv.style.opacity = 1;
         current = (current + 1) % backgrounds.length;
       }, 2000); // wait for fade out before changing
