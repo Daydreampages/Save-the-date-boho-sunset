@@ -16,16 +16,6 @@
   z-index: -1;
   opacity: 1;
   transition: opacity 3s ease-in-out;
-}
-
-#background {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #FFF9F3; /* Safe default color */
-  transition: opacity 3s ease-in-out;
-}
 
 /* Main Content Above Background */
 #content {
@@ -79,7 +69,7 @@ p {
   font-size: 1.8rem;
   margin-top: 0;
   color: #D76A03;
-  text-shadow: 1px 1px 3px rgba(75, 46, 46, 0.3);
+  text-shadow:1px 1px 3px rgba(239, 216, 197, 0.7);
 }
 
 @media (max-width: 300px) {
@@ -135,7 +125,7 @@ p {
 }
 
 .gallery img:hover {
-  transform: scale(2.05);
+  transform: scale(1.05);
 }
 
 .photo {
@@ -153,17 +143,10 @@ p {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-h1, h2, h3, {
+h1, h2, h3 {
   text-shadow: 1px 1px 4px rgba(239, 216, 197, 0.8);
 }
 
-p{
-  text-shadow:1px 1px 3px rgba(239, 216, 197, 0.7);
-}
-
-#background {
-  transition: opacity 3s ease-in-out;
-}
 @keyframes pulse {
   0% {
     filter: brightness(100%);
